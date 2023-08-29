@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.scss';
 
 import MyClass from './components/MyComponents';
@@ -6,22 +5,11 @@ import React from 'react';
 
 class App extends React.Component{
   
-  state = {
-    name: "An",
-    age : 20
-  }
-
-  handle(event) {
-    this.setState({
-      age: event.screenX
-    })
-  }
 
   render(){
     return(
-      <div>Hello World
-        <div>I am {this.state.name}, I am {this.state.age}</div>
-            <button onClick={(event) => {this.handle(event)}}>Click me</button>
+      <div>
+        <MyClass></MyClass>
       </div>
     );
   }
