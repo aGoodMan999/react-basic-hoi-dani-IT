@@ -15,6 +15,7 @@ class App extends React.Component{
     return(
       <div>Hello World
         <div>I am {this.state.name}</div>
+        <MyClass></MyClass>
       </div>
     );
   }
