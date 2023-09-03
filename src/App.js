@@ -1,15 +1,13 @@
-import './App.scss';
+import "./App.scss";
 
-import MyClass from './components/MyComponents';
-import React from 'react';
+import MyClass from "./components/MyComponents";
+import React from "react";
 
-class App extends React.Component{
-  
-  render(){
-    return(
+class App extends React.Component {
+  render() {
+    return (
       <div>
         <MyClass></MyClass>
-        
       </div>
     );
   }
@@ -37,8 +35,3 @@ export default App;
 //     </div>
 //   );
 // }
-
-
-
-
-

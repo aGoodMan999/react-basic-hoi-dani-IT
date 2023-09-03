@@ -18,6 +18,7 @@ class DisplayInfor extends React.Component {
     if (!this.state.isDisplay) {
       className = "hide";
     }
+
     return (
       <div className="display-infor-container">
         <div
@@ -31,12 +32,18 @@ class DisplayInfor extends React.Component {
           <div className={className}>
             {listUser.map((element) => {
               return (
-                <div
-                  key={element.name}
-                  className={+element.age > 19 ? "red" : "green"}
-                >
-                  Name: {element.name}, Age {element.age}
-                </div>
+                <>
+                  <div className="divider"></div>
+                  <div
+                    key={element.id}
+                    className={+element.age > 19 ? "red" : "green"}
+                  >
+                    Name: {element.name}, Age {element.age}
+                  </div>
+                  <button onClick={() => this.props.deleteUser(element.id)}>
+                    x
+                  </button>
+                </>
               );
             })}
           </div>
