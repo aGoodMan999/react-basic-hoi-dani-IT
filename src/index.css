@@ -12,6 +12,10 @@ code {
     monospace;
 }
 
+input{
+  padding: 5px;
+}
+
 .red{
   color: red;
 }
@@ -20,11 +24,3 @@ code {
   color: greenyellow;
 }
 
-.hide {
-  display: none;
-}
-
-.show {
-  display:contents;
-
-}

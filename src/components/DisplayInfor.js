@@ -1,4 +1,5 @@
 import React from "react";
+import "./DisplayInfor.scss";
 
 class DisplayInfor extends React.Component {
   state = {
@@ -18,7 +19,7 @@ class DisplayInfor extends React.Component {
       className = "hide";
     }
     return (
-      <div>
+      <div className="display-infor-container">
         <div
           onClick={(event) => {
             this.handleHideShow(event);
