@@ -2,9 +2,26 @@ import React from "react";
 import "./DisplayInfor.scss";
 
 class DisplayInfor extends React.Component {
+  constructor(props) {
+    console.log(">>> call me constructor");
+    super(props);
+  }
+
   state = {
     isDisplay: true,
   };
+
+  componentDidMount() {
+    console.log(">>> call me component did mount");
+    setTimeout(() => {
+      document.title = "An";
+    }, 3000);
+  }
+
+  componentDidUpdate(p1, p2) {
+    console.log(">>> call me component did update");
+    console.log(p1, "\n", p2);
+  }
 
   handleHideShow = (event) => {
     this.setState({
@@ -13,6 +30,7 @@ class DisplayInfor extends React.Component {
   };
 
   render() {
+    console.log(">>> call me render");
     let listUser = this.props.listUser;
     let className = "show";
     if (!this.state.isDisplay) {
