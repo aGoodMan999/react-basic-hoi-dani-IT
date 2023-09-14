@@ -1,13 +1,13 @@
 import "./App.scss";
 
-import MyClass from "./components/MyComponents";
+import MyComponent from "./components/MyComponents";
 import React from "react";
 
 class App extends React.Component {
   render() {
     return (
       <div>
-        <MyClass></MyClass>
+        <MyComponent></MyComponent>
       </div>
     );
   }
